@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form action="http://localhost:3000/register" method="POST">
+            <label>Name: <input type="text" name="name" required></label><br>
+            <label>Date of Birth: <input type="date" name="dob" required></label><br>
+            <label>Class: 
+                <select name="class" required>
+                    <option value="Class1">1 year</option>
+                    <option value="Class2">2 year</option>
+                    <!-- More options -->
+                </select>
+            </label><br>
+            <label>Division: 
+                <select name="division" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <!-- More options -->
+                </select>
+            </label><br>
+            <label>Gender: 
+                <input type="radio" name="gender" value="Male" required> Male
+                <input type="radio" name="gender" value="Female" required> Female
+            </label><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
